@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Calculus BC Tower Defense</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="map-panel">
+            <canvas id="game-canvas"></canvas>
+            <div id="map-ui">
+                <div id="top-left-ui">
+                    <div id="coin-counter">
+                        <span class="coin-icon">●</span>
+                        <span id="coin-amount">100</span>
+                    </div>
+                    <div id="base-hp">
+                        <span class="hp-icon">♥</span>
+                        <span id="hp-amount">20</span>
+                    </div>
+                </div>
+                <div id="top-right-ui">
+                    <div id="wave-info">
+                        <span id="wave-number">Wave 1</span>
+                    </div>
+                    <button id="start-wave-btn" class="game-btn">START WAVE</button>
+                    <button id="speed-toggle-btn" class="game-btn">1x</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bottom-panel">
+            <div id="panel-top-row">
+                <button id="full-review-btn" class="tab-btn hidden">FULL REVIEW</button>
+                <div id="panel-tabs">
+                    <button id="question-tab-btn" class="tab-btn active">Question</button>
+                    <button id="dashboard-tab-btn" class="tab-btn">Dashboard</button>
+                    <button id="market-tab-btn" class="tab-btn">Market</button>
+                </div>
+            </div>
+            
+            <div id="question-panel" class="panel-content active">
+                
+                <div id="question-header">
+                    <div id="topic-info">
+                        <span id="topic-label">Sequences</span>
+                        <span id="coin-reward">· 15 coins</span>
+                    </div>
+                </div>
+                
+                <div id="question-content">
+                    <div id="question-prompt"></div>
+                    <div id="answer-choices">
+                        <button class="answer-btn" data-choice="0"></button>
+                        <button class="answer-btn" data-choice="1"></button>
+                        <button class="answer-btn" data-choice="2"></button>
+                        <button class="answer-btn" data-choice="3"></button>
+                    </div>
+                    <div id="question-feedback" class="hidden">
+                        <div id="feedback-message"></div>
+                        <div id="feedback-explanation"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="dashboard-panel" class="panel-content">
+                <div id="topic-grid"></div>
+                
+                <div id="dashboard-info">
+                    <div id="time-freeze-section">
+                        <h3>Time Freezes: <span id="freeze-count">0</span>/3</h3>
+                        <button id="use-freeze-btn" class="game-btn" disabled>USE FREEZE (8s)</button>
+                        <button id="buy-freeze-btn" class="game-btn">BUY FREEZE (50 coins)</button>
+                    </div>
+                    
+                    <div id="wave-preview">
+                        <h3>Next Wave Enemies</h3>
+                        <div id="enemy-preview-list"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="market-panel" class="panel-content">
+                <div id="market-grid"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tower-menu" class="hidden">
+        <button id="close-tower-menu" class="close-x-btn">×</button>
+        <h3>Select Tower</h3>
+        <div id="tower-selection"></div>
+    </div>
+    
+    <div id="upgrade-menu" class="hidden">
+        <h3 id="upgrade-tower-name"></h3>
+        <div id="upgrade-options"></div>
+        <button id="sell-tower-btn" class="game-btn danger">Sell (60% refund)</button>
+        <button id="close-upgrade-menu" class="game-btn">Close</button>
+    </div>
+    
+    
+    <div id="game-over" class="modal hidden">
+        <div class="modal-content">
+            <h1>Game Over</h1>
+            <div id="game-over-stats"></div>
+            <button id="retry-level-btn" class="game-btn">Retry Level</button>
+            <button id="back-to-menu-btn" class="game-btn">Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/enemies.js"></script>
+    <script src="js/towers.js"></script>
+    <script src="js/projectiles.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

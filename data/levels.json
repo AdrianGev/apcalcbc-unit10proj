@@ -1,0 +1,4169 @@
+{
+  "waves": [
+    {
+      "wave": 1,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 3,
+          "interval": 2500
+        }
+      ]
+    },
+    {
+      "wave": 2,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 5,
+          "interval": 2000
+        }
+      ]
+    },
+    {
+      "wave": 3,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 10,
+          "interval": 1500
+        },
+        {
+          "type": "fast",
+          "count": 3,
+          "interval": 2000
+        }
+      ]
+    },
+    {
+      "wave": 4,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 12,
+          "interval": 1400
+        },
+        {
+          "type": "fast",
+          "count": 5,
+          "interval": 1800
+        }
+      ]
+    },
+    {
+      "wave": 5,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 10,
+          "interval": 1200
+        },
+        {
+          "type": "fast",
+          "count": 6,
+          "interval": 1600
+        },
+        {
+          "type": "tank",
+          "count": 2,
+          "interval": 3000
+        }
+      ]
+    },
+    {
+      "wave": 6,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 15,
+          "interval": 1000
+        },
+        {
+          "type": "fast",
+          "count": 8,
+          "interval": 1400
+        },
+        {
+          "type": "tank",
+          "count": 3,
+          "interval": 2500
+        }
+      ]
+    },
+    {
+      "wave": 7,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 12,
+          "interval": 1000
+        },
+        {
+          "type": "fast",
+          "count": 10,
+          "interval": 1200
+        },
+        {
+          "type": "tank",
+          "count": 4,
+          "interval": 2200
+        }
+      ]
+    },
+    {
+      "wave": 8,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 15,
+          "interval": 900
+        },
+        {
+          "type": "fast",
+          "count": 12,
+          "interval": 1100
+        },
+        {
+          "type": "tank",
+          "count": 5,
+          "interval": 2000
+        }
+      ]
+    },
+    {
+      "wave": 9,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 18,
+          "interval": 800
+        },
+        {
+          "type": "fast",
+          "count": 15,
+          "interval": 1000
+        },
+        {
+          "type": "tank",
+          "count": 6,
+          "interval": 1800
+        }
+      ]
+    },
+    {
+      "wave": 10,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 20,
+          "interval": 700
+        },
+        {
+          "type": "fast",
+          "count": 18,
+          "interval": 900
+        },
+        {
+          "type": "tank",
+          "count": 8,
+          "interval": 1600
+        },
+        {
+          "type": "boss",
+          "count": 1,
+          "interval": 5000
+        }
+      ]
+    },
+    {
+      "wave": 11,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 22,
+          "interval": 700
+        },
+        {
+          "type": "fast",
+          "count": 20,
+          "interval": 850
+        },
+        {
+          "type": "tank",
+          "count": 9,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 12,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 25,
+          "interval": 650
+        },
+        {
+          "type": "fast",
+          "count": 22,
+          "interval": 800
+        },
+        {
+          "type": "tank",
+          "count": 10,
+          "interval": 1400
+        }
+      ]
+    },
+    {
+      "wave": 13,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 28,
+          "interval": 600
+        },
+        {
+          "type": "fast",
+          "count": 25,
+          "interval": 750
+        },
+        {
+          "type": "tank",
+          "count": 12,
+          "interval": 1300
+        }
+      ]
+    },
+    {
+      "wave": 14,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 30,
+          "interval": 550
+        },
+        {
+          "type": "fast",
+          "count": 28,
+          "interval": 700
+        },
+        {
+          "type": "tank",
+          "count": 14,
+          "interval": 1200
+        }
+      ]
+    },
+    {
+      "wave": 15,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 32,
+          "interval": 500
+        },
+        {
+          "type": "fast",
+          "count": 30,
+          "interval": 650
+        },
+        {
+          "type": "tank",
+          "count": 16,
+          "interval": 1100
+        },
+        {
+          "type": "boss",
+          "count": 2,
+          "interval": 4000
+        }
+      ]
+    },
+    {
+      "wave": 16,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 35,
+          "interval": 500
+        },
+        {
+          "type": "fast",
+          "count": 32,
+          "interval": 600
+        },
+        {
+          "type": "tank",
+          "count": 18,
+          "interval": 1000
+        }
+      ]
+    },
+    {
+      "wave": 17,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 38,
+          "interval": 480
+        },
+        {
+          "type": "fast",
+          "count": 35,
+          "interval": 580
+        },
+        {
+          "type": "tank",
+          "count": 20,
+          "interval": 950
+        }
+      ]
+    },
+    {
+      "wave": 18,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 40,
+          "interval": 460
+        },
+        {
+          "type": "fast",
+          "count": 38,
+          "interval": 560
+        },
+        {
+          "type": "tank",
+          "count": 22,
+          "interval": 900
+        }
+      ]
+    },
+    {
+      "wave": 19,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 42,
+          "interval": 440
+        },
+        {
+          "type": "fast",
+          "count": 40,
+          "interval": 540
+        },
+        {
+          "type": "tank",
+          "count": 24,
+          "interval": 850
+        }
+      ]
+    },
+    {
+      "wave": 20,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 45,
+          "interval": 420
+        },
+        {
+          "type": "fast",
+          "count": 42,
+          "interval": 520
+        },
+        {
+          "type": "tank",
+          "count": 26,
+          "interval": 800
+        },
+        {
+          "type": "boss",
+          "count": 3,
+          "interval": 3500
+        }
+      ]
+    },
+    {
+      "wave": 21,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 48,
+          "interval": 400
+        },
+        {
+          "type": "fast",
+          "count": 45,
+          "interval": 500
+        },
+        {
+          "type": "tank",
+          "count": 28,
+          "interval": 750
+        }
+      ]
+    },
+    {
+      "wave": 22,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 50,
+          "interval": 390
+        },
+        {
+          "type": "fast",
+          "count": 48,
+          "interval": 490
+        },
+        {
+          "type": "tank",
+          "count": 30,
+          "interval": 720
+        }
+      ]
+    },
+    {
+      "wave": 23,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 52,
+          "interval": 380
+        },
+        {
+          "type": "fast",
+          "count": 50,
+          "interval": 480
+        },
+        {
+          "type": "tank",
+          "count": 32,
+          "interval": 700
+        }
+      ]
+    },
+    {
+      "wave": 24,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 54,
+          "interval": 370
+        },
+        {
+          "type": "fast",
+          "count": 52,
+          "interval": 470
+        },
+        {
+          "type": "tank",
+          "count": 34,
+          "interval": 680
+        }
+      ]
+    },
+    {
+      "wave": 25,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 56,
+          "interval": 360
+        },
+        {
+          "type": "fast",
+          "count": 54,
+          "interval": 460
+        },
+        {
+          "type": "tank",
+          "count": 36,
+          "interval": 660
+        },
+        {
+          "type": "boss",
+          "count": 4,
+          "interval": 3000
+        }
+      ]
+    },
+    {
+      "wave": 26,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 58,
+          "interval": 350
+        },
+        {
+          "type": "fast",
+          "count": 56,
+          "interval": 450
+        },
+        {
+          "type": "tank",
+          "count": 38,
+          "interval": 640
+        }
+      ]
+    },
+    {
+      "wave": 27,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 60,
+          "interval": 340
+        },
+        {
+          "type": "fast",
+          "count": 58,
+          "interval": 440
+        },
+        {
+          "type": "tank",
+          "count": 40,
+          "interval": 620
+        }
+      ]
+    },
+    {
+      "wave": 28,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 62,
+          "interval": 330
+        },
+        {
+          "type": "fast",
+          "count": 60,
+          "interval": 430
+        },
+        {
+          "type": "tank",
+          "count": 42,
+          "interval": 600
+        }
+      ]
+    },
+    {
+      "wave": 29,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 64,
+          "interval": 320
+        },
+        {
+          "type": "fast",
+          "count": 62,
+          "interval": 420
+        },
+        {
+          "type": "tank",
+          "count": 44,
+          "interval": 580
+        }
+      ]
+    },
+    {
+      "wave": 30,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 66,
+          "interval": 310
+        },
+        {
+          "type": "fast",
+          "count": 64,
+          "interval": 410
+        },
+        {
+          "type": "tank",
+          "count": 46,
+          "interval": 560
+        },
+        {
+          "type": "boss",
+          "count": 5,
+          "interval": 2800
+        }
+      ]
+    },
+    {
+      "wave": 31,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 68,
+          "interval": 300
+        },
+        {
+          "type": "fast",
+          "count": 66,
+          "interval": 400
+        },
+        {
+          "type": "tank",
+          "count": 48,
+          "interval": 540
+        }
+      ]
+    },
+    {
+      "wave": 32,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 70,
+          "interval": 295
+        },
+        {
+          "type": "fast",
+          "count": 68,
+          "interval": 395
+        },
+        {
+          "type": "tank",
+          "count": 50,
+          "interval": 530
+        }
+      ]
+    },
+    {
+      "wave": 33,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 72,
+          "interval": 290
+        },
+        {
+          "type": "fast",
+          "count": 70,
+          "interval": 390
+        },
+        {
+          "type": "tank",
+          "count": 52,
+          "interval": 520
+        }
+      ]
+    },
+    {
+      "wave": 34,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 74,
+          "interval": 285
+        },
+        {
+          "type": "fast",
+          "count": 72,
+          "interval": 385
+        },
+        {
+          "type": "tank",
+          "count": 54,
+          "interval": 510
+        }
+      ]
+    },
+    {
+      "wave": 35,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 76,
+          "interval": 280
+        },
+        {
+          "type": "fast",
+          "count": 74,
+          "interval": 380
+        },
+        {
+          "type": "tank",
+          "count": 56,
+          "interval": 500
+        },
+        {
+          "type": "boss",
+          "count": 6,
+          "interval": 2600
+        }
+      ]
+    },
+    {
+      "wave": 36,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 78,
+          "interval": 275
+        },
+        {
+          "type": "fast",
+          "count": 76,
+          "interval": 375
+        },
+        {
+          "type": "tank",
+          "count": 58,
+          "interval": 490
+        }
+      ]
+    },
+    {
+      "wave": 37,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 80,
+          "interval": 270
+        },
+        {
+          "type": "fast",
+          "count": 78,
+          "interval": 370
+        },
+        {
+          "type": "tank",
+          "count": 60,
+          "interval": 480
+        }
+      ]
+    },
+    {
+      "wave": 38,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 82,
+          "interval": 265
+        },
+        {
+          "type": "fast",
+          "count": 80,
+          "interval": 365
+        },
+        {
+          "type": "tank",
+          "count": 62,
+          "interval": 470
+        }
+      ]
+    },
+    {
+      "wave": 39,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 84,
+          "interval": 260
+        },
+        {
+          "type": "fast",
+          "count": 82,
+          "interval": 360
+        },
+        {
+          "type": "tank",
+          "count": 64,
+          "interval": 460
+        }
+      ]
+    },
+    {
+      "wave": 40,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 86,
+          "interval": 255
+        },
+        {
+          "type": "fast",
+          "count": 84,
+          "interval": 355
+        },
+        {
+          "type": "tank",
+          "count": 66,
+          "interval": 450
+        },
+        {
+          "type": "boss",
+          "count": 7,
+          "interval": 2400
+        }
+      ]
+    },
+    {
+      "wave": 41,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 88,
+          "interval": 250
+        },
+        {
+          "type": "fast",
+          "count": 86,
+          "interval": 350
+        },
+        {
+          "type": "tank",
+          "count": 68,
+          "interval": 440
+        }
+      ]
+    },
+    {
+      "wave": 42,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 90,
+          "interval": 248
+        },
+        {
+          "type": "fast",
+          "count": 88,
+          "interval": 348
+        },
+        {
+          "type": "tank",
+          "count": 70,
+          "interval": 435
+        }
+      ]
+    },
+    {
+      "wave": 43,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 92,
+          "interval": 246
+        },
+        {
+          "type": "fast",
+          "count": 90,
+          "interval": 346
+        },
+        {
+          "type": "tank",
+          "count": 72,
+          "interval": 430
+        }
+      ]
+    },
+    {
+      "wave": 44,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 94,
+          "interval": 244
+        },
+        {
+          "type": "fast",
+          "count": 92,
+          "interval": 344
+        },
+        {
+          "type": "tank",
+          "count": 74,
+          "interval": 425
+        }
+      ]
+    },
+    {
+      "wave": 45,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 96,
+          "interval": 242
+        },
+        {
+          "type": "fast",
+          "count": 94,
+          "interval": 342
+        },
+        {
+          "type": "tank",
+          "count": 76,
+          "interval": 420
+        },
+        {
+          "type": "boss",
+          "count": 8,
+          "interval": 2200
+        }
+      ]
+    },
+    {
+      "wave": 46,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 98,
+          "interval": 240
+        },
+        {
+          "type": "fast",
+          "count": 96,
+          "interval": 340
+        },
+        {
+          "type": "tank",
+          "count": 78,
+          "interval": 415
+        }
+      ]
+    },
+    {
+      "wave": 47,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 100,
+          "interval": 238
+        },
+        {
+          "type": "fast",
+          "count": 98,
+          "interval": 338
+        },
+        {
+          "type": "tank",
+          "count": 80,
+          "interval": 410
+        }
+      ]
+    },
+    {
+      "wave": 48,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 102,
+          "interval": 236
+        },
+        {
+          "type": "fast",
+          "count": 100,
+          "interval": 336
+        },
+        {
+          "type": "tank",
+          "count": 82,
+          "interval": 405
+        }
+      ]
+    },
+    {
+      "wave": 49,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 104,
+          "interval": 234
+        },
+        {
+          "type": "fast",
+          "count": 102,
+          "interval": 334
+        },
+        {
+          "type": "tank",
+          "count": 84,
+          "interval": 400
+        }
+      ]
+    },
+    {
+      "wave": 50,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 106,
+          "interval": 232
+        },
+        {
+          "type": "fast",
+          "count": 104,
+          "interval": 332
+        },
+        {
+          "type": "tank",
+          "count": 86,
+          "interval": 395
+        },
+        {
+          "type": "boss",
+          "count": 10,
+          "interval": 2000
+        }
+      ]
+    },
+    {
+      "wave": 51,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 108,
+          "interval": 231
+        },
+        {
+          "type": "fast",
+          "count": 106,
+          "interval": 331
+        },
+        {
+          "type": "tank",
+          "count": 88,
+          "interval": 394
+        }
+      ]
+    },
+    {
+      "wave": 52,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 110,
+          "interval": 230
+        },
+        {
+          "type": "fast",
+          "count": 108,
+          "interval": 330
+        },
+        {
+          "type": "tank",
+          "count": 90,
+          "interval": 393
+        }
+      ]
+    },
+    {
+      "wave": 53,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 112,
+          "interval": 229
+        },
+        {
+          "type": "fast",
+          "count": 110,
+          "interval": 329
+        },
+        {
+          "type": "tank",
+          "count": 92,
+          "interval": 392
+        }
+      ]
+    },
+    {
+      "wave": 54,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 114,
+          "interval": 228
+        },
+        {
+          "type": "fast",
+          "count": 112,
+          "interval": 328
+        },
+        {
+          "type": "tank",
+          "count": 94,
+          "interval": 391
+        }
+      ]
+    },
+    {
+      "wave": 55,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 116,
+          "interval": 227
+        },
+        {
+          "type": "fast",
+          "count": 114,
+          "interval": 327
+        },
+        {
+          "type": "tank",
+          "count": 96,
+          "interval": 390
+        },
+        {
+          "type": "boss",
+          "count": 11,
+          "interval": 1975
+        }
+      ]
+    },
+    {
+      "wave": 56,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 118,
+          "interval": 226
+        },
+        {
+          "type": "fast",
+          "count": 116,
+          "interval": 326
+        },
+        {
+          "type": "tank",
+          "count": 98,
+          "interval": 389
+        }
+      ]
+    },
+    {
+      "wave": 57,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 120,
+          "interval": 225
+        },
+        {
+          "type": "fast",
+          "count": 118,
+          "interval": 325
+        },
+        {
+          "type": "tank",
+          "count": 100,
+          "interval": 388
+        }
+      ]
+    },
+    {
+      "wave": 58,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 122,
+          "interval": 224
+        },
+        {
+          "type": "fast",
+          "count": 120,
+          "interval": 324
+        },
+        {
+          "type": "tank",
+          "count": 102,
+          "interval": 387
+        }
+      ]
+    },
+    {
+      "wave": 59,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 124,
+          "interval": 223
+        },
+        {
+          "type": "fast",
+          "count": 122,
+          "interval": 323
+        },
+        {
+          "type": "tank",
+          "count": 104,
+          "interval": 386
+        }
+      ]
+    },
+    {
+      "wave": 60,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 126,
+          "interval": 222
+        },
+        {
+          "type": "fast",
+          "count": 124,
+          "interval": 322
+        },
+        {
+          "type": "tank",
+          "count": 106,
+          "interval": 385
+        },
+        {
+          "type": "boss",
+          "count": 12,
+          "interval": 1950
+        }
+      ]
+    },
+    {
+      "wave": 61,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 128,
+          "interval": 221
+        },
+        {
+          "type": "fast",
+          "count": 126,
+          "interval": 321
+        },
+        {
+          "type": "tank",
+          "count": 108,
+          "interval": 384
+        }
+      ]
+    },
+    {
+      "wave": 62,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 130,
+          "interval": 220
+        },
+        {
+          "type": "fast",
+          "count": 128,
+          "interval": 320
+        },
+        {
+          "type": "tank",
+          "count": 110,
+          "interval": 383
+        }
+      ]
+    },
+    {
+      "wave": 63,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 132,
+          "interval": 219
+        },
+        {
+          "type": "fast",
+          "count": 130,
+          "interval": 319
+        },
+        {
+          "type": "tank",
+          "count": 112,
+          "interval": 382
+        }
+      ]
+    },
+    {
+      "wave": 64,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 134,
+          "interval": 218
+        },
+        {
+          "type": "fast",
+          "count": 132,
+          "interval": 318
+        },
+        {
+          "type": "tank",
+          "count": 114,
+          "interval": 381
+        }
+      ]
+    },
+    {
+      "wave": 65,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 136,
+          "interval": 217
+        },
+        {
+          "type": "fast",
+          "count": 134,
+          "interval": 317
+        },
+        {
+          "type": "tank",
+          "count": 116,
+          "interval": 380
+        },
+        {
+          "type": "boss",
+          "count": 13,
+          "interval": 1925
+        }
+      ]
+    },
+    {
+      "wave": 66,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 138,
+          "interval": 216
+        },
+        {
+          "type": "fast",
+          "count": 136,
+          "interval": 316
+        },
+        {
+          "type": "tank",
+          "count": 118,
+          "interval": 379
+        }
+      ]
+    },
+    {
+      "wave": 67,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 140,
+          "interval": 215
+        },
+        {
+          "type": "fast",
+          "count": 138,
+          "interval": 315
+        },
+        {
+          "type": "tank",
+          "count": 120,
+          "interval": 378
+        }
+      ]
+    },
+    {
+      "wave": 68,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 142,
+          "interval": 214
+        },
+        {
+          "type": "fast",
+          "count": 140,
+          "interval": 314
+        },
+        {
+          "type": "tank",
+          "count": 122,
+          "interval": 377
+        }
+      ]
+    },
+    {
+      "wave": 69,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 144,
+          "interval": 213
+        },
+        {
+          "type": "fast",
+          "count": 142,
+          "interval": 313
+        },
+        {
+          "type": "tank",
+          "count": 124,
+          "interval": 376
+        }
+      ]
+    },
+    {
+      "wave": 70,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 146,
+          "interval": 212
+        },
+        {
+          "type": "fast",
+          "count": 144,
+          "interval": 312
+        },
+        {
+          "type": "tank",
+          "count": 126,
+          "interval": 375
+        },
+        {
+          "type": "boss",
+          "count": 14,
+          "interval": 1900
+        }
+      ]
+    },
+    {
+      "wave": 71,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 148,
+          "interval": 211
+        },
+        {
+          "type": "fast",
+          "count": 146,
+          "interval": 311
+        },
+        {
+          "type": "tank",
+          "count": 128,
+          "interval": 374
+        }
+      ]
+    },
+    {
+      "wave": 72,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 150,
+          "interval": 210
+        },
+        {
+          "type": "fast",
+          "count": 148,
+          "interval": 310
+        },
+        {
+          "type": "tank",
+          "count": 130,
+          "interval": 373
+        }
+      ]
+    },
+    {
+      "wave": 73,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 152,
+          "interval": 209
+        },
+        {
+          "type": "fast",
+          "count": 150,
+          "interval": 309
+        },
+        {
+          "type": "tank",
+          "count": 132,
+          "interval": 372
+        }
+      ]
+    },
+    {
+      "wave": 74,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 154,
+          "interval": 208
+        },
+        {
+          "type": "fast",
+          "count": 152,
+          "interval": 308
+        },
+        {
+          "type": "tank",
+          "count": 134,
+          "interval": 371
+        }
+      ]
+    },
+    {
+      "wave": 75,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 156,
+          "interval": 207
+        },
+        {
+          "type": "fast",
+          "count": 154,
+          "interval": 307
+        },
+        {
+          "type": "tank",
+          "count": 136,
+          "interval": 370
+        },
+        {
+          "type": "boss",
+          "count": 15,
+          "interval": 1875
+        }
+      ]
+    },
+    {
+      "wave": 76,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 158,
+          "interval": 206
+        },
+        {
+          "type": "fast",
+          "count": 156,
+          "interval": 306
+        },
+        {
+          "type": "tank",
+          "count": 138,
+          "interval": 369
+        }
+      ]
+    },
+    {
+      "wave": 77,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 160,
+          "interval": 205
+        },
+        {
+          "type": "fast",
+          "count": 158,
+          "interval": 305
+        },
+        {
+          "type": "tank",
+          "count": 140,
+          "interval": 368
+        }
+      ]
+    },
+    {
+      "wave": 78,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 162,
+          "interval": 204
+        },
+        {
+          "type": "fast",
+          "count": 160,
+          "interval": 304
+        },
+        {
+          "type": "tank",
+          "count": 142,
+          "interval": 367
+        }
+      ]
+    },
+    {
+      "wave": 79,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 164,
+          "interval": 203
+        },
+        {
+          "type": "fast",
+          "count": 162,
+          "interval": 303
+        },
+        {
+          "type": "tank",
+          "count": 144,
+          "interval": 366
+        }
+      ]
+    },
+    {
+      "wave": 80,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 166,
+          "interval": 202
+        },
+        {
+          "type": "fast",
+          "count": 164,
+          "interval": 302
+        },
+        {
+          "type": "tank",
+          "count": 146,
+          "interval": 365
+        },
+        {
+          "type": "boss",
+          "count": 16,
+          "interval": 1850
+        }
+      ]
+    },
+    {
+      "wave": 81,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 168,
+          "interval": 201
+        },
+        {
+          "type": "fast",
+          "count": 166,
+          "interval": 301
+        },
+        {
+          "type": "tank",
+          "count": 148,
+          "interval": 364
+        }
+      ]
+    },
+    {
+      "wave": 82,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 170,
+          "interval": 200
+        },
+        {
+          "type": "fast",
+          "count": 168,
+          "interval": 300
+        },
+        {
+          "type": "tank",
+          "count": 150,
+          "interval": 363
+        }
+      ]
+    },
+    {
+      "wave": 83,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 172,
+          "interval": 199
+        },
+        {
+          "type": "fast",
+          "count": 170,
+          "interval": 299
+        },
+        {
+          "type": "tank",
+          "count": 152,
+          "interval": 362
+        }
+      ]
+    },
+    {
+      "wave": 84,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 174,
+          "interval": 198
+        },
+        {
+          "type": "fast",
+          "count": 172,
+          "interval": 298
+        },
+        {
+          "type": "tank",
+          "count": 154,
+          "interval": 361
+        }
+      ]
+    },
+    {
+      "wave": 85,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 176,
+          "interval": 197
+        },
+        {
+          "type": "fast",
+          "count": 174,
+          "interval": 297
+        },
+        {
+          "type": "tank",
+          "count": 156,
+          "interval": 360
+        },
+        {
+          "type": "boss",
+          "count": 17,
+          "interval": 1825
+        }
+      ]
+    },
+    {
+      "wave": 86,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 178,
+          "interval": 196
+        },
+        {
+          "type": "fast",
+          "count": 176,
+          "interval": 296
+        },
+        {
+          "type": "tank",
+          "count": 158,
+          "interval": 359
+        }
+      ]
+    },
+    {
+      "wave": 87,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 180,
+          "interval": 195
+        },
+        {
+          "type": "fast",
+          "count": 178,
+          "interval": 295
+        },
+        {
+          "type": "tank",
+          "count": 160,
+          "interval": 358
+        }
+      ]
+    },
+    {
+      "wave": 88,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 182,
+          "interval": 194
+        },
+        {
+          "type": "fast",
+          "count": 180,
+          "interval": 294
+        },
+        {
+          "type": "tank",
+          "count": 162,
+          "interval": 357
+        }
+      ]
+    },
+    {
+      "wave": 89,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 184,
+          "interval": 193
+        },
+        {
+          "type": "fast",
+          "count": 182,
+          "interval": 293
+        },
+        {
+          "type": "tank",
+          "count": 164,
+          "interval": 356
+        }
+      ]
+    },
+    {
+      "wave": 90,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 186,
+          "interval": 192
+        },
+        {
+          "type": "fast",
+          "count": 184,
+          "interval": 292
+        },
+        {
+          "type": "tank",
+          "count": 166,
+          "interval": 355
+        },
+        {
+          "type": "boss",
+          "count": 18,
+          "interval": 1800
+        }
+      ]
+    },
+    {
+      "wave": 91,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 188,
+          "interval": 191
+        },
+        {
+          "type": "fast",
+          "count": 186,
+          "interval": 291
+        },
+        {
+          "type": "tank",
+          "count": 168,
+          "interval": 354
+        }
+      ]
+    },
+    {
+      "wave": 92,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 190,
+          "interval": 190
+        },
+        {
+          "type": "fast",
+          "count": 188,
+          "interval": 290
+        },
+        {
+          "type": "tank",
+          "count": 170,
+          "interval": 353
+        }
+      ]
+    },
+    {
+      "wave": 93,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 192,
+          "interval": 189
+        },
+        {
+          "type": "fast",
+          "count": 190,
+          "interval": 289
+        },
+        {
+          "type": "tank",
+          "count": 172,
+          "interval": 352
+        }
+      ]
+    },
+    {
+      "wave": 94,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 194,
+          "interval": 188
+        },
+        {
+          "type": "fast",
+          "count": 192,
+          "interval": 288
+        },
+        {
+          "type": "tank",
+          "count": 174,
+          "interval": 351
+        }
+      ]
+    },
+    {
+      "wave": 95,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 196,
+          "interval": 187
+        },
+        {
+          "type": "fast",
+          "count": 194,
+          "interval": 287
+        },
+        {
+          "type": "tank",
+          "count": 176,
+          "interval": 350
+        },
+        {
+          "type": "boss",
+          "count": 19,
+          "interval": 1775
+        }
+      ]
+    },
+    {
+      "wave": 96,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 198,
+          "interval": 186
+        },
+        {
+          "type": "fast",
+          "count": 196,
+          "interval": 286
+        },
+        {
+          "type": "tank",
+          "count": 178,
+          "interval": 349
+        }
+      ]
+    },
+    {
+      "wave": 97,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 200,
+          "interval": 185
+        },
+        {
+          "type": "fast",
+          "count": 198,
+          "interval": 285
+        },
+        {
+          "type": "tank",
+          "count": 180,
+          "interval": 348
+        }
+      ]
+    },
+    {
+      "wave": 98,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 202,
+          "interval": 184
+        },
+        {
+          "type": "fast",
+          "count": 200,
+          "interval": 284
+        },
+        {
+          "type": "tank",
+          "count": 182,
+          "interval": 347
+        }
+      ]
+    },
+    {
+      "wave": 99,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 204,
+          "interval": 183
+        },
+        {
+          "type": "fast",
+          "count": 202,
+          "interval": 283
+        },
+        {
+          "type": "tank",
+          "count": 184,
+          "interval": 346
+        }
+      ]
+    },
+    {
+      "wave": 100,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 206,
+          "interval": 182
+        },
+        {
+          "type": "fast",
+          "count": 204,
+          "interval": 282
+        },
+        {
+          "type": "tank",
+          "count": 186,
+          "interval": 345
+        },
+        {
+          "type": "boss",
+          "count": 20,
+          "interval": 1750
+        }
+      ]
+    },
+    {
+      "wave": 101,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 208,
+          "interval": 181
+        },
+        {
+          "type": "fast",
+          "count": 206,
+          "interval": 281
+        },
+        {
+          "type": "tank",
+          "count": 188,
+          "interval": 344
+        }
+      ]
+    },
+    {
+      "wave": 102,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 210,
+          "interval": 180
+        },
+        {
+          "type": "fast",
+          "count": 208,
+          "interval": 280
+        },
+        {
+          "type": "tank",
+          "count": 190,
+          "interval": 343
+        }
+      ]
+    },
+    {
+      "wave": 103,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 212,
+          "interval": 179
+        },
+        {
+          "type": "fast",
+          "count": 210,
+          "interval": 279
+        },
+        {
+          "type": "tank",
+          "count": 192,
+          "interval": 342
+        }
+      ]
+    },
+    {
+      "wave": 104,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 214,
+          "interval": 178
+        },
+        {
+          "type": "fast",
+          "count": 212,
+          "interval": 278
+        },
+        {
+          "type": "tank",
+          "count": 194,
+          "interval": 341
+        }
+      ]
+    },
+    {
+      "wave": 105,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 216,
+          "interval": 177
+        },
+        {
+          "type": "fast",
+          "count": 214,
+          "interval": 277
+        },
+        {
+          "type": "tank",
+          "count": 196,
+          "interval": 340
+        },
+        {
+          "type": "boss",
+          "count": 21,
+          "interval": 1725
+        }
+      ]
+    },
+    {
+      "wave": 106,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 218,
+          "interval": 176
+        },
+        {
+          "type": "fast",
+          "count": 216,
+          "interval": 276
+        },
+        {
+          "type": "tank",
+          "count": 198,
+          "interval": 339
+        }
+      ]
+    },
+    {
+      "wave": 107,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 220,
+          "interval": 175
+        },
+        {
+          "type": "fast",
+          "count": 218,
+          "interval": 275
+        },
+        {
+          "type": "tank",
+          "count": 200,
+          "interval": 338
+        }
+      ]
+    },
+    {
+      "wave": 108,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 222,
+          "interval": 174
+        },
+        {
+          "type": "fast",
+          "count": 220,
+          "interval": 274
+        },
+        {
+          "type": "tank",
+          "count": 202,
+          "interval": 337
+        }
+      ]
+    },
+    {
+      "wave": 109,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 224,
+          "interval": 173
+        },
+        {
+          "type": "fast",
+          "count": 222,
+          "interval": 273
+        },
+        {
+          "type": "tank",
+          "count": 204,
+          "interval": 336
+        }
+      ]
+    },
+    {
+      "wave": 110,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 226,
+          "interval": 172
+        },
+        {
+          "type": "fast",
+          "count": 224,
+          "interval": 272
+        },
+        {
+          "type": "tank",
+          "count": 206,
+          "interval": 335
+        },
+        {
+          "type": "boss",
+          "count": 22,
+          "interval": 1700
+        }
+      ]
+    },
+    {
+      "wave": 111,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 228,
+          "interval": 171
+        },
+        {
+          "type": "fast",
+          "count": 226,
+          "interval": 271
+        },
+        {
+          "type": "tank",
+          "count": 208,
+          "interval": 334
+        }
+      ]
+    },
+    {
+      "wave": 112,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 230,
+          "interval": 170
+        },
+        {
+          "type": "fast",
+          "count": 228,
+          "interval": 270
+        },
+        {
+          "type": "tank",
+          "count": 210,
+          "interval": 333
+        }
+      ]
+    },
+    {
+      "wave": 113,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 232,
+          "interval": 169
+        },
+        {
+          "type": "fast",
+          "count": 230,
+          "interval": 269
+        },
+        {
+          "type": "tank",
+          "count": 212,
+          "interval": 332
+        }
+      ]
+    },
+    {
+      "wave": 114,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 234,
+          "interval": 168
+        },
+        {
+          "type": "fast",
+          "count": 232,
+          "interval": 268
+        },
+        {
+          "type": "tank",
+          "count": 214,
+          "interval": 331
+        }
+      ]
+    },
+    {
+      "wave": 115,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 236,
+          "interval": 167
+        },
+        {
+          "type": "fast",
+          "count": 234,
+          "interval": 267
+        },
+        {
+          "type": "tank",
+          "count": 216,
+          "interval": 330
+        },
+        {
+          "type": "boss",
+          "count": 23,
+          "interval": 1675
+        }
+      ]
+    },
+    {
+      "wave": 116,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 238,
+          "interval": 166
+        },
+        {
+          "type": "fast",
+          "count": 236,
+          "interval": 266
+        },
+        {
+          "type": "tank",
+          "count": 218,
+          "interval": 329
+        }
+      ]
+    },
+    {
+      "wave": 117,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 240,
+          "interval": 165
+        },
+        {
+          "type": "fast",
+          "count": 238,
+          "interval": 265
+        },
+        {
+          "type": "tank",
+          "count": 220,
+          "interval": 328
+        }
+      ]
+    },
+    {
+      "wave": 118,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 242,
+          "interval": 164
+        },
+        {
+          "type": "fast",
+          "count": 240,
+          "interval": 264
+        },
+        {
+          "type": "tank",
+          "count": 222,
+          "interval": 327
+        }
+      ]
+    },
+    {
+      "wave": 119,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 244,
+          "interval": 163
+        },
+        {
+          "type": "fast",
+          "count": 242,
+          "interval": 263
+        },
+        {
+          "type": "tank",
+          "count": 224,
+          "interval": 326
+        }
+      ]
+    },
+    {
+      "wave": 120,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 246,
+          "interval": 162
+        },
+        {
+          "type": "fast",
+          "count": 244,
+          "interval": 262
+        },
+        {
+          "type": "tank",
+          "count": 226,
+          "interval": 325
+        },
+        {
+          "type": "boss",
+          "count": 24,
+          "interval": 1650
+        }
+      ]
+    },
+    {
+      "wave": 121,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 248,
+          "interval": 161
+        },
+        {
+          "type": "fast",
+          "count": 246,
+          "interval": 261
+        },
+        {
+          "type": "tank",
+          "count": 228,
+          "interval": 324
+        }
+      ]
+    },
+    {
+      "wave": 122,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 250,
+          "interval": 160
+        },
+        {
+          "type": "fast",
+          "count": 248,
+          "interval": 260
+        },
+        {
+          "type": "tank",
+          "count": 230,
+          "interval": 323
+        }
+      ]
+    },
+    {
+      "wave": 123,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 252,
+          "interval": 159
+        },
+        {
+          "type": "fast",
+          "count": 250,
+          "interval": 259
+        },
+        {
+          "type": "tank",
+          "count": 232,
+          "interval": 322
+        }
+      ]
+    },
+    {
+      "wave": 124,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 254,
+          "interval": 158
+        },
+        {
+          "type": "fast",
+          "count": 252,
+          "interval": 258
+        },
+        {
+          "type": "tank",
+          "count": 234,
+          "interval": 321
+        }
+      ]
+    },
+    {
+      "wave": 125,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 256,
+          "interval": 157
+        },
+        {
+          "type": "fast",
+          "count": 254,
+          "interval": 257
+        },
+        {
+          "type": "tank",
+          "count": 236,
+          "interval": 320
+        },
+        {
+          "type": "boss",
+          "count": 25,
+          "interval": 1625
+        }
+      ]
+    },
+    {
+      "wave": 126,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 258,
+          "interval": 156
+        },
+        {
+          "type": "fast",
+          "count": 256,
+          "interval": 256
+        },
+        {
+          "type": "tank",
+          "count": 238,
+          "interval": 319
+        }
+      ]
+    },
+    {
+      "wave": 127,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 260,
+          "interval": 155
+        },
+        {
+          "type": "fast",
+          "count": 258,
+          "interval": 255
+        },
+        {
+          "type": "tank",
+          "count": 240,
+          "interval": 318
+        }
+      ]
+    },
+    {
+      "wave": 128,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 262,
+          "interval": 154
+        },
+        {
+          "type": "fast",
+          "count": 260,
+          "interval": 254
+        },
+        {
+          "type": "tank",
+          "count": 242,
+          "interval": 317
+        }
+      ]
+    },
+    {
+      "wave": 129,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 264,
+          "interval": 153
+        },
+        {
+          "type": "fast",
+          "count": 262,
+          "interval": 253
+        },
+        {
+          "type": "tank",
+          "count": 244,
+          "interval": 316
+        }
+      ]
+    },
+    {
+      "wave": 130,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 266,
+          "interval": 152
+        },
+        {
+          "type": "fast",
+          "count": 264,
+          "interval": 252
+        },
+        {
+          "type": "tank",
+          "count": 246,
+          "interval": 315
+        },
+        {
+          "type": "boss",
+          "count": 26,
+          "interval": 1600
+        }
+      ]
+    },
+    {
+      "wave": 131,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 268,
+          "interval": 151
+        },
+        {
+          "type": "fast",
+          "count": 266,
+          "interval": 251
+        },
+        {
+          "type": "tank",
+          "count": 248,
+          "interval": 314
+        }
+      ]
+    },
+    {
+      "wave": 132,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 270,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 268,
+          "interval": 250
+        },
+        {
+          "type": "tank",
+          "count": 250,
+          "interval": 313
+        }
+      ]
+    },
+    {
+      "wave": 133,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 272,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 270,
+          "interval": 249
+        },
+        {
+          "type": "tank",
+          "count": 252,
+          "interval": 312
+        }
+      ]
+    },
+    {
+      "wave": 134,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 274,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 272,
+          "interval": 248
+        },
+        {
+          "type": "tank",
+          "count": 254,
+          "interval": 311
+        }
+      ]
+    },
+    {
+      "wave": 135,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 276,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 274,
+          "interval": 247
+        },
+        {
+          "type": "tank",
+          "count": 256,
+          "interval": 310
+        },
+        {
+          "type": "boss",
+          "count": 27,
+          "interval": 1575
+        }
+      ]
+    },
+    {
+      "wave": 136,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 278,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 276,
+          "interval": 246
+        },
+        {
+          "type": "tank",
+          "count": 258,
+          "interval": 309
+        }
+      ]
+    },
+    {
+      "wave": 137,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 280,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 278,
+          "interval": 245
+        },
+        {
+          "type": "tank",
+          "count": 260,
+          "interval": 308
+        }
+      ]
+    },
+    {
+      "wave": 138,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 282,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 280,
+          "interval": 244
+        },
+        {
+          "type": "tank",
+          "count": 262,
+          "interval": 307
+        }
+      ]
+    },
+    {
+      "wave": 139,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 284,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 282,
+          "interval": 243
+        },
+        {
+          "type": "tank",
+          "count": 264,
+          "interval": 306
+        }
+      ]
+    },
+    {
+      "wave": 140,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 286,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 284,
+          "interval": 242
+        },
+        {
+          "type": "tank",
+          "count": 266,
+          "interval": 305
+        },
+        {
+          "type": "boss",
+          "count": 28,
+          "interval": 1550
+        }
+      ]
+    },
+    {
+      "wave": 141,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 288,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 286,
+          "interval": 241
+        },
+        {
+          "type": "tank",
+          "count": 268,
+          "interval": 304
+        }
+      ]
+    },
+    {
+      "wave": 142,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 290,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 288,
+          "interval": 240
+        },
+        {
+          "type": "tank",
+          "count": 270,
+          "interval": 303
+        }
+      ]
+    },
+    {
+      "wave": 143,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 292,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 290,
+          "interval": 239
+        },
+        {
+          "type": "tank",
+          "count": 272,
+          "interval": 302
+        }
+      ]
+    },
+    {
+      "wave": 144,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 294,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 292,
+          "interval": 238
+        },
+        {
+          "type": "tank",
+          "count": 274,
+          "interval": 301
+        }
+      ]
+    },
+    {
+      "wave": 145,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 296,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 294,
+          "interval": 237
+        },
+        {
+          "type": "tank",
+          "count": 276,
+          "interval": 300
+        },
+        {
+          "type": "boss",
+          "count": 29,
+          "interval": 1525
+        }
+      ]
+    },
+    {
+      "wave": 146,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 298,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 296,
+          "interval": 236
+        },
+        {
+          "type": "tank",
+          "count": 278,
+          "interval": 299
+        }
+      ]
+    },
+    {
+      "wave": 147,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 300,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 298,
+          "interval": 235
+        },
+        {
+          "type": "tank",
+          "count": 280,
+          "interval": 298
+        }
+      ]
+    },
+    {
+      "wave": 148,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 302,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 300,
+          "interval": 234
+        },
+        {
+          "type": "tank",
+          "count": 282,
+          "interval": 297
+        }
+      ]
+    },
+    {
+      "wave": 149,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 304,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 302,
+          "interval": 233
+        },
+        {
+          "type": "tank",
+          "count": 284,
+          "interval": 296
+        }
+      ]
+    },
+    {
+      "wave": 150,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 306,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 304,
+          "interval": 232
+        },
+        {
+          "type": "tank",
+          "count": 286,
+          "interval": 295
+        },
+        {
+          "type": "boss",
+          "count": 30,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 151,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 308,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 306,
+          "interval": 231
+        },
+        {
+          "type": "tank",
+          "count": 288,
+          "interval": 294
+        }
+      ]
+    },
+    {
+      "wave": 152,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 310,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 308,
+          "interval": 230
+        },
+        {
+          "type": "tank",
+          "count": 290,
+          "interval": 293
+        }
+      ]
+    },
+    {
+      "wave": 153,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 312,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 310,
+          "interval": 229
+        },
+        {
+          "type": "tank",
+          "count": 292,
+          "interval": 292
+        }
+      ]
+    },
+    {
+      "wave": 154,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 314,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 312,
+          "interval": 228
+        },
+        {
+          "type": "tank",
+          "count": 294,
+          "interval": 291
+        }
+      ]
+    },
+    {
+      "wave": 155,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 316,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 314,
+          "interval": 227
+        },
+        {
+          "type": "tank",
+          "count": 296,
+          "interval": 290
+        },
+        {
+          "type": "boss",
+          "count": 31,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 156,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 318,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 316,
+          "interval": 226
+        },
+        {
+          "type": "tank",
+          "count": 298,
+          "interval": 289
+        }
+      ]
+    },
+    {
+      "wave": 157,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 320,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 318,
+          "interval": 225
+        },
+        {
+          "type": "tank",
+          "count": 300,
+          "interval": 288
+        }
+      ]
+    },
+    {
+      "wave": 158,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 322,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 320,
+          "interval": 224
+        },
+        {
+          "type": "tank",
+          "count": 302,
+          "interval": 287
+        }
+      ]
+    },
+    {
+      "wave": 159,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 324,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 322,
+          "interval": 223
+        },
+        {
+          "type": "tank",
+          "count": 304,
+          "interval": 286
+        }
+      ]
+    },
+    {
+      "wave": 160,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 326,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 324,
+          "interval": 222
+        },
+        {
+          "type": "tank",
+          "count": 306,
+          "interval": 285
+        },
+        {
+          "type": "boss",
+          "count": 32,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 161,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 328,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 326,
+          "interval": 221
+        },
+        {
+          "type": "tank",
+          "count": 308,
+          "interval": 284
+        }
+      ]
+    },
+    {
+      "wave": 162,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 330,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 328,
+          "interval": 220
+        },
+        {
+          "type": "tank",
+          "count": 310,
+          "interval": 283
+        }
+      ]
+    },
+    {
+      "wave": 163,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 332,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 330,
+          "interval": 219
+        },
+        {
+          "type": "tank",
+          "count": 312,
+          "interval": 282
+        }
+      ]
+    },
+    {
+      "wave": 164,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 334,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 332,
+          "interval": 218
+        },
+        {
+          "type": "tank",
+          "count": 314,
+          "interval": 281
+        }
+      ]
+    },
+    {
+      "wave": 165,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 336,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 334,
+          "interval": 217
+        },
+        {
+          "type": "tank",
+          "count": 316,
+          "interval": 280
+        },
+        {
+          "type": "boss",
+          "count": 33,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 166,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 338,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 336,
+          "interval": 216
+        },
+        {
+          "type": "tank",
+          "count": 318,
+          "interval": 279
+        }
+      ]
+    },
+    {
+      "wave": 167,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 340,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 338,
+          "interval": 215
+        },
+        {
+          "type": "tank",
+          "count": 320,
+          "interval": 278
+        }
+      ]
+    },
+    {
+      "wave": 168,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 342,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 340,
+          "interval": 214
+        },
+        {
+          "type": "tank",
+          "count": 322,
+          "interval": 277
+        }
+      ]
+    },
+    {
+      "wave": 169,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 344,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 342,
+          "interval": 213
+        },
+        {
+          "type": "tank",
+          "count": 324,
+          "interval": 276
+        }
+      ]
+    },
+    {
+      "wave": 170,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 346,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 344,
+          "interval": 212
+        },
+        {
+          "type": "tank",
+          "count": 326,
+          "interval": 275
+        },
+        {
+          "type": "boss",
+          "count": 34,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 171,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 348,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 346,
+          "interval": 211
+        },
+        {
+          "type": "tank",
+          "count": 328,
+          "interval": 274
+        }
+      ]
+    },
+    {
+      "wave": 172,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 350,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 348,
+          "interval": 210
+        },
+        {
+          "type": "tank",
+          "count": 330,
+          "interval": 273
+        }
+      ]
+    },
+    {
+      "wave": 173,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 352,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 350,
+          "interval": 209
+        },
+        {
+          "type": "tank",
+          "count": 332,
+          "interval": 272
+        }
+      ]
+    },
+    {
+      "wave": 174,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 354,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 352,
+          "interval": 208
+        },
+        {
+          "type": "tank",
+          "count": 334,
+          "interval": 271
+        }
+      ]
+    },
+    {
+      "wave": 175,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 356,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 354,
+          "interval": 207
+        },
+        {
+          "type": "tank",
+          "count": 336,
+          "interval": 270
+        },
+        {
+          "type": "boss",
+          "count": 35,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 176,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 358,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 356,
+          "interval": 206
+        },
+        {
+          "type": "tank",
+          "count": 338,
+          "interval": 269
+        }
+      ]
+    },
+    {
+      "wave": 177,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 360,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 358,
+          "interval": 205
+        },
+        {
+          "type": "tank",
+          "count": 340,
+          "interval": 268
+        }
+      ]
+    },
+    {
+      "wave": 178,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 362,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 360,
+          "interval": 204
+        },
+        {
+          "type": "tank",
+          "count": 342,
+          "interval": 267
+        }
+      ]
+    },
+    {
+      "wave": 179,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 364,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 362,
+          "interval": 203
+        },
+        {
+          "type": "tank",
+          "count": 344,
+          "interval": 266
+        }
+      ]
+    },
+    {
+      "wave": 180,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 366,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 364,
+          "interval": 202
+        },
+        {
+          "type": "tank",
+          "count": 346,
+          "interval": 265
+        },
+        {
+          "type": "boss",
+          "count": 36,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 181,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 368,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 366,
+          "interval": 201
+        },
+        {
+          "type": "tank",
+          "count": 348,
+          "interval": 264
+        }
+      ]
+    },
+    {
+      "wave": 182,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 370,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 368,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 350,
+          "interval": 263
+        }
+      ]
+    },
+    {
+      "wave": 183,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 372,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 370,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 352,
+          "interval": 262
+        }
+      ]
+    },
+    {
+      "wave": 184,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 374,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 372,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 354,
+          "interval": 261
+        }
+      ]
+    },
+    {
+      "wave": 185,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 376,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 374,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 356,
+          "interval": 260
+        },
+        {
+          "type": "boss",
+          "count": 37,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 186,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 378,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 376,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 358,
+          "interval": 259
+        }
+      ]
+    },
+    {
+      "wave": 187,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 380,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 378,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 360,
+          "interval": 258
+        }
+      ]
+    },
+    {
+      "wave": 188,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 382,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 380,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 362,
+          "interval": 257
+        }
+      ]
+    },
+    {
+      "wave": 189,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 384,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 382,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 364,
+          "interval": 256
+        }
+      ]
+    },
+    {
+      "wave": 190,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 386,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 384,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 366,
+          "interval": 255
+        },
+        {
+          "type": "boss",
+          "count": 38,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 191,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 388,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 386,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 368,
+          "interval": 254
+        }
+      ]
+    },
+    {
+      "wave": 192,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 390,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 388,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 370,
+          "interval": 253
+        }
+      ]
+    },
+    {
+      "wave": 193,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 392,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 390,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 372,
+          "interval": 252
+        }
+      ]
+    },
+    {
+      "wave": 194,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 394,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 392,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 374,
+          "interval": 251
+        }
+      ]
+    },
+    {
+      "wave": 195,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 396,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 394,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 376,
+          "interval": 250
+        },
+        {
+          "type": "boss",
+          "count": 39,
+          "interval": 1500
+        }
+      ]
+    },
+    {
+      "wave": 196,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 398,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 396,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 378,
+          "interval": 250
+        }
+      ]
+    },
+    {
+      "wave": 197,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 400,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 398,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 380,
+          "interval": 250
+        }
+      ]
+    },
+    {
+      "wave": 198,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 402,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 400,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 382,
+          "interval": 250
+        }
+      ]
+    },
+    {
+      "wave": 199,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 404,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 402,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 384,
+          "interval": 250
+        }
+      ]
+    },
+    {
+      "wave": 200,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 406,
+          "interval": 150
+        },
+        {
+          "type": "fast",
+          "count": 404,
+          "interval": 200
+        },
+        {
+          "type": "tank",
+          "count": 386,
+          "interval": 250
+        },
+        {
+          "type": "boss",
+          "count": 40,
+          "interval": 1500
+        }
+      ]
+    }
+  ]
+}
