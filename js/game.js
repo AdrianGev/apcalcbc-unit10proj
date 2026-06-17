@@ -103,11 +103,9 @@ class Game {
             this.gridY = undefined;
         });
         
-        // right click to cancel tower placement
         this.canvas.addEventListener('contextmenu', (e) => {
             e.preventDefault();
             if (this.towerOnCursor) {
-                // refund the tower cost
                 const towerData = TOWER_DATA[this.towerOnCursor];
                 this.coins += towerData.cost;
                 this.uiManager.updateCoins(this.coins);
@@ -171,7 +169,6 @@ class Game {
     
     answerQuestion(choiceIndex) {
         const question = this.questionManager.currentQuestion;
-        // map the shuffled index back to the original index
         const originalIndex = this.uiManager.currentShuffleMap[choiceIndex];
         const isCorrect = originalIndex === question.correct;
         
@@ -201,20 +198,16 @@ class Game {
     }
     
     pinTopic(topicKey) {
-        // if clicking the same topic that's already pinned, unpin it
         if (this.questionManager.pinnedTopic === topicKey) {
             this.questionManager.pinnedTopic = null;
         } else {
-            // pin the new topic
             this.questionManager.currentTopic = topicKey;
             this.questionManager.pinnedTopic = topicKey;
         }
         
-        // update the dashboard to reflect the selection change
         this.uiManager.updateDashboard();
         this.uiManager.updatePinButton();
         
-        // load a question from the selected topic and switch to question tab
         const question = this.questionManager.getNextQuestion();
         this.uiManager.displayQuestion(question);
         this.uiManager.switchPanel('question');
@@ -227,20 +220,14 @@ class Game {
             return;
         }
         
-        // deduct coins
         this.coins -= towerData.cost;
         this.uiManager.updateCoins(this.coins);
         
-        // put tower on cursor
         this.towerOnCursor = towerKey;
-        
-        // dtay in market panel and tower icon will follow cursor
     }
     
     placeTower(towerType, x, y) {
         const towerData = TOWER_DATA[towerType];
-        
-        // don't check coins again already deducted when buying from market
         
         if (!this.map.isValidPlacement(x, y)) {
             return false;
@@ -257,8 +244,6 @@ class Game {
         if (tooClose) {
             return false;
         }
-        
-        // don't deduct coins again already done in buyTowerFromMarket
         
         const tower = new Tower(towerType, x, y);
         this.towers.push(tower);
@@ -359,7 +344,6 @@ class Game {
         });
         
         if (this.waveManager.isWaveComplete() && this.waveManager.hasStartedAnyWave) {
-            // increment wave when it completes
             if (!this.waveManager.waveJustCompleted) {
                 this.waveManager.currentWave++;
                 this.uiManager.updateWave(this.waveManager.currentWave);
@@ -395,13 +379,11 @@ class Game {
             projectile.draw(this.ctx);
         });
         
-        // draw tower on cursor
         if (this.towerOnCursor && this.gridX !== undefined) {
             const towerData = TOWER_DATA[this.towerOnCursor];
             const centerX = this.gridX + 20;
             const centerY = this.gridY + 20;
             
-            // draw range circle
             this.ctx.beginPath();
             this.ctx.arc(centerX, centerY, towerData.range, 0, Math.PI * 2);
             this.ctx.fillStyle = this.isValidPlacementSpot ? 'rgba(90, 140, 60, 0.15)' : 'rgba(255, 100, 100, 0.15)';
@@ -410,7 +392,6 @@ class Game {
             this.ctx.lineWidth = 2;
             this.ctx.stroke();
             
-            // draw tower icon matching the actual tower appearance
             const colors = {
                 1: '#66d9ef',
                 2: '#a6e22e',
@@ -420,12 +401,10 @@ class Game {
             };
             const towerColor = colors[towerData.tier] || '#888';
             
-            // make it semi-transparent based on placement validity
             const alpha = this.isValidPlacementSpot ? 0.8 : 0.5;
             this.ctx.fillStyle = towerColor.replace(')', `, ${alpha})`).replace('rgb', 'rgba').replace('#', 'rgba(') || towerColor;
             
             if (this.towerOnCursor === 'lagrange_barrier') {
-                // draw barrier as rectangle
                 const barWidth = 80;
                 const barHeight = 40;
                 this.ctx.fillRect(centerX - barWidth/2, centerY - barHeight/2, barWidth, barHeight);
@@ -433,7 +412,6 @@ class Game {
                 this.ctx.lineWidth = 2;
                 this.ctx.strokeRect(centerX - barWidth/2, centerY - barHeight/2, barWidth, barHeight);
             } else {
-                // draw circular tower
                 this.ctx.globalAlpha = alpha;
                 this.ctx.fillStyle = towerColor;
                 this.ctx.beginPath();
@@ -445,7 +423,6 @@ class Game {
                 this.ctx.globalAlpha = 1.0;
             }
             
-            // draw tower symbol
             const symbols = {
                 'an_tower': 'aₙ',
                 'limit_tower': 'lim',

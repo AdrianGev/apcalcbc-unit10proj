@@ -6,6 +6,11 @@ class UIManager {
         this.hoveredTower = null;
         
         this.initializeEventListeners();
+        
+        if (localStorage.getItem('helpViewed') === 'true') {
+            const helpBtn = document.getElementById('help-btn');
+            if (helpBtn) helpBtn.classList.add('viewed');
+        }
     }
     
     renderMixedContent(text, element) {
@@ -30,7 +35,6 @@ class UIManager {
                 });
                 element.appendChild(span);
             } catch (e) {
-                console.error('KaTeX error:', e, 'Math:', mathContent);
                 element.appendChild(document.createTextNode(match[0]));
             }
             
@@ -77,19 +81,6 @@ class UIManager {
             this.updateDashboard();
         });
         
-        document.getElementById('buy-freeze-btn').addEventListener('click', () => {
-            this.game.buyTimeFreeze();
-            this.updateDashboard();
-        });
-        
-        document.getElementById('use-freeze-btn').addEventListener('click', () => {
-            this.game.useTimeFreeze();
-            this.updateDashboard();
-        });
-        
-        // answer buttons are handled by onclick in displayQuestion() and loadTutorialQuestion()
-        // don't add event listeners here to avoid double-triggering
-        
         document.getElementById('close-tower-menu').addEventListener('click', () => {
             document.getElementById('tower-menu').classList.add('hidden');
             this.selectedTower = null;
@@ -99,10 +90,53 @@ class UIManager {
             document.getElementById('upgrade-menu').classList.add('hidden');
         });
         
+        document.getElementById('continue-btn').addEventListener('click', () => {
+            this.hideExplanationView();
+            if (this.game.nextQuestion) {
+                this.game.nextQuestion();
+            }
+        });
+        
+        document.getElementById('help-btn').addEventListener('click', () => {
+            document.getElementById('help-modal').classList.remove('hidden');
+            const helpBtn = document.getElementById('help-btn');
+            helpBtn.classList.add('viewed');
+            localStorage.setItem('helpViewed', 'true');
+        });
+        
+        document.getElementById('close-help-btn').addEventListener('click', () => {
+            document.getElementById('help-modal').classList.add('hidden');
+        });
+        
         document.getElementById('sell-tower-btn').addEventListener('click', () => {
             this.game.sellSelectedTower();
             document.getElementById('upgrade-menu').classList.add('hidden');
         });
+    }
+    
+    showExplanationView(isCorrect, problem, explanation) {
+        document.getElementById('question-prompt').classList.add('hidden');
+        document.getElementById('answer-choices').classList.add('hidden');
+        document.getElementById('question-feedback').classList.add('hidden');
+        
+        const explanationView = document.getElementById('explanation-view');
+        explanationView.classList.remove('hidden');
+        
+        const headerEl = document.getElementById('explanation-header');
+        headerEl.textContent = isCorrect ? "Yes! Here's one way to do it:" : "Close! Here's one approach:";
+        headerEl.style.color = isCorrect ? '#51cf66' : '#ff6b6b';
+        
+        const problemEl = document.getElementById('explanation-problem-content');
+        this.renderMixedContent(problem, problemEl);
+        
+        const solutionEl = document.getElementById('explanation-solution-content');
+        this.renderMixedContent(explanation, solutionEl);
+    }
+    
+    hideExplanationView() {
+        document.getElementById('explanation-view').classList.add('hidden');
+        document.getElementById('question-prompt').classList.remove('hidden');
+        document.getElementById('answer-choices').classList.remove('hidden');
     }
     
     switchPanel(panel) {
@@ -137,7 +171,6 @@ class UIManager {
     
     updateCoins(coins) {
         document.getElementById('coin-amount').textContent = coins;
-        // dashboard coin counter was removed, so skip updating it
     }
     
     updateHP(hp) {
@@ -155,12 +188,7 @@ class UIManager {
     
     
     displayQuestion(question) {
-        if (!question) {
-            console.error('No question provided to displayQuestion');
-            return;
-        }
-        
-        console.log('Displaying question:', question);
+        if (!question) return;
         
         const topicData = TOPIC_DATA[question.topic];
         document.getElementById('topic-label').textContent = topicData.name;
@@ -169,14 +197,12 @@ class UIManager {
         const promptEl = document.getElementById('question-prompt');
         this.renderMixedContent(question.prompt, promptEl);
         
-        // shuffle the answer choices
         const shuffledChoices = question.choices.map((choice, index) => ({ choice, originalIndex: index }));
         for (let i = shuffledChoices.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [shuffledChoices[i], shuffledChoices[j]] = [shuffledChoices[j], shuffledChoices[i]];
         }
         
-        // store the mapping from shuffled index to original index
         this.currentShuffleMap = shuffledChoices.map(item => item.originalIndex);
         
         const answerButtons = document.querySelectorAll('.answer-btn');
@@ -187,17 +213,18 @@ class UIManager {
             
             this.renderMixedContent(item.choice, btn);
             
-            // attach click event for regular questions
             btn.onclick = () => this.game.answerQuestion(index);
         });
         
         document.getElementById('question-feedback').classList.add('hidden');
+        document.getElementById('explanation-view').classList.add('hidden');
+        document.getElementById('question-prompt').classList.remove('hidden');
+        document.getElementById('answer-choices').classList.remove('hidden');
     }
     
     showQuestionFeedback(result) {
         const answerButtons = document.querySelectorAll('.answer-btn');
         const originalCorrectIndex = this.game.questionManager.currentQuestion.correct;
-        // find where the correct answer is in the shuffled array
         const shuffledCorrectIndex = this.currentShuffleMap.indexOf(originalCorrectIndex);
         const userAnswerIndex = result.userAnswer;
         
@@ -210,26 +237,12 @@ class UIManager {
             }
         });
         
-        if (!result.correct) {
-            const feedbackEl = document.getElementById('question-feedback');
-            feedbackEl.classList.remove('hidden');
-            
-            document.getElementById('feedback-message').textContent = 'Incorrect';
-            document.getElementById('feedback-message').style.color = '#ff6b6b';
-            
-            const explanationEl = document.getElementById('feedback-explanation');
-            this.renderMixedContent(result.explanation, explanationEl);
-            
-            // auto-load next question after showing explanation
-            setTimeout(() => {
-                this.game.nextQuestion();
-            }, 3000);
-        } else {
-            // auto-load next question after correct answer
-            setTimeout(() => {
-                this.game.nextQuestion();
-            }, 800);
-        }
+        setTimeout(() => {
+            const continueBtn = document.getElementById('continue-btn');
+            continueBtn.onclick = null;
+            const currentQuestion = this.game.questionManager.currentQuestion;
+            this.showExplanationView(result.correct, currentQuestion.prompt, result.explanation);
+        }, 500);
     }
     
     updateDashboard() {
@@ -269,12 +282,7 @@ class UIManager {
             topicGrid.appendChild(card);
         });
         
-        document.getElementById('freeze-count').textContent = this.game.timeFreezes;
-        document.getElementById('use-freeze-btn').disabled = this.game.timeFreezes === 0;
-        document.getElementById('buy-freeze-btn').disabled = 
-            this.game.coins < GAME_CONFIG.TIME_FREEZE_COST || 
-            this.game.timeFreezes >= GAME_CONFIG.MAX_TIME_FREEZES;
-        
+                
         this.updateTowerCosts();
     }
     
@@ -406,19 +414,16 @@ class UIManager {
     }
     
     showTutorial() {
-        // skip tutorial start game directly
         this.game.map = new GameMap('level3', this.game.canvas.width, this.game.canvas.height);
         this.game.gameRunning = true;
         this.game.lastFrameTime = Date.now();
         this.game.gameLoop();
         
-        // load first question
         const question = this.game.questionManager.getNextQuestion();
         this.displayQuestion(question);
     }
     
     loadTutorialQuestion() {
-        // clear any existing correct/incorrect styling first
         const answerButtons = document.querySelectorAll('.answer-btn');
         answerButtons.forEach(btn => {
             btn.classList.remove('correct', 'incorrect');
@@ -439,6 +444,9 @@ class UIManager {
         });
         
         document.getElementById('question-feedback').classList.add('hidden');
+        document.getElementById('explanation-view').classList.add('hidden');
+        document.getElementById('question-prompt').classList.remove('hidden');
+        document.getElementById('answer-choices').classList.remove('hidden');
     }
     
     answerTutorialQuestion(choiceIndex) {
@@ -447,69 +455,53 @@ class UIManager {
         
         const result = this.game.questionManager.answerQuestion(choiceIndex, isCorrect);
         
-        if (result.correct) {
-            this.game.coins += result.coins;
-            this.game.tutorialQuestionsAnswered++;
+        const answerButtons = document.querySelectorAll('.answer-btn');
+        answerButtons.forEach((btn, index) => {
+            btn.disabled = true;
+            if (index === question.correct) {
+                btn.classList.add('correct');
+            } else if (index === choiceIndex && !isCorrect) {
+                btn.classList.add('incorrect');
+            }
+        });
+        
+        setTimeout(() => {
+            this.showExplanationView(isCorrect, question.prompt, result.explanation);
             
-            document.getElementById('tutorial-count').textContent = this.game.tutorialQuestionsAnswered;
-            
-            const answerButtons = document.querySelectorAll('.answer-btn');
-            answerButtons[choiceIndex].classList.add('correct');
-            
-            setTimeout(() => {
-                if (this.game.tutorialQuestionsAnswered >= 5) {
-                    document.getElementById('tutorial-mode').classList.add('hidden');
-                    document.getElementById('question-header').classList.remove('hidden');
+            const continueBtn = document.getElementById('continue-btn');
+            continueBtn.onclick = () => {
+                this.hideExplanationView();
+                
+                if (isCorrect) {
+                    this.game.coins += result.coins;
+                    this.game.tutorialQuestionsAnswered++;
+                    document.getElementById('tutorial-count').textContent = this.game.tutorialQuestionsAnswered;
                     
-                    // don't recreate the map bc it was already created in showTutorial()
-                    // initialize the other game components
-                    this.game.towers = [];
-                    this.game.projectiles = [];
-                    this.game.waveManager = new WaveManager();
-                    this.game.timeFreezes = 0;
-                    this.game.gameSpeed = GAME_CONFIG.GAME_SPEED_NORMAL;
-                    this.game.waveManager.currentWave = 1;
-                    this.game.questionManager.updateAvailableTopics(1);
-                    this.updateCoins(this.game.coins);
-                    this.updateHP(this.game.baseHP);
-                    this.updateWave(1);
-                    
-                    // game loop is already running from showTutorial()
-                    
-                    // load the next regular question
-                    console.log('Tutorial complete, loading next question');
-                    const nextQuestion = this.game.questionManager.getNextQuestion();
-                    console.log('Next question:', nextQuestion);
-                    this.displayQuestion(nextQuestion);
+                    if (this.game.tutorialQuestionsAnswered >= 5) {
+                        document.getElementById('tutorial-mode').classList.add('hidden');
+                        document.getElementById('question-header').classList.remove('hidden');
+                        
+                        this.game.towers = [];
+                        this.game.projectiles = [];
+                        this.game.waveManager = new WaveManager();
+                        this.game.timeFreezes = 0;
+                        this.game.gameSpeed = GAME_CONFIG.GAME_SPEED_NORMAL;
+                        this.game.waveManager.currentWave = 1;
+                        this.game.questionManager.updateAvailableTopics(1);
+                        this.updateCoins(this.game.coins);
+                        this.updateHP(this.game.baseHP);
+                        this.updateWave(1);
+                        
+                        const nextQuestion = this.game.questionManager.getNextQuestion();
+                        this.displayQuestion(nextQuestion);
+                    } else {
+                        this.loadTutorialQuestion();
+                    }
                 } else {
                     this.loadTutorialQuestion();
                 }
-            }, 800);
-        } else {
-            const answerButtons = document.querySelectorAll('.answer-btn');
-            const correctIndex = question.correct;
-            
-            answerButtons.forEach((btn, index) => {
-                btn.disabled = true;
-                if (index === correctIndex) {
-                    btn.classList.add('correct');
-                } else if (index === choiceIndex) {
-                    btn.classList.add('incorrect');
-                }
-            });
-            
-            const feedbackEl = document.getElementById('question-feedback');
-            feedbackEl.classList.remove('hidden');
-            document.getElementById('feedback-message').textContent = 'Incorrect';
-            document.getElementById('feedback-message').style.color = '#ff6b6b';
-            
-            const explanationEl = document.getElementById('feedback-explanation');
-            this.renderMixedContent(result.explanation, explanationEl);
-            
-            setTimeout(() => {
-                this.loadTutorialQuestion();
-            }, 3000);
-        }
+            };
+        }, 500);
     }
     
     showVictory(score) {

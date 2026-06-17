@@ -6,10 +6,8 @@ async function loadQuestions() {
         const response = await fetch('data/questions.json');
         QUESTION_BANK = await response.json();
         questionsLoaded = true;
-        console.log('Questions loaded successfully');
         return true;
     } catch (error) {
-        console.error('Error loading questions:', error);
         QUESTION_BANK = {
             sequences: [
                 {
@@ -397,7 +395,6 @@ async function loadQuestions() {
     ]
         };
         questionsLoaded = true;
-        console.log('Fallback questions loaded');
         return false;
     }
 }
@@ -445,7 +442,6 @@ class QuestionManager {
             return null;
         }
         
-        // if there's only one question, we have to use it
         if (questions.length === 1) {
             this.currentQuestion = {
                 ...questions[0],
@@ -454,13 +450,11 @@ class QuestionManager {
             return this.currentQuestion;
         }
         
-        // get a random question that's different from the last one
         let randomIndex;
         let attempts = 0;
         do {
             randomIndex = Math.floor(Math.random() * questions.length);
             attempts++;
-            // prevent infinite loop if something goes wrong
             if (attempts > 50) break;
         } while (this.currentQuestion && 
                  questions[randomIndex].prompt === this.currentQuestion.prompt &&

@@ -221,7 +221,6 @@ class GameMap {
     }
     
     isValidPlacement(x, y) {
-        // check if point is too close to the path
         for (let i = 0; i < this.path.length - 1; i++) {
             const p1 = this.path[i];
             const p2 = this.path[i + 1];
@@ -231,7 +230,6 @@ class GameMap {
             }
         }
         
-        // check if point is too close to the base
         const baseDist = Math.sqrt(
             Math.pow(x - this.basePosition.x, 2) + 
             Math.pow(y - this.basePosition.y, 2)

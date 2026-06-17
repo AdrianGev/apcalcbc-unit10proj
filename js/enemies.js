@@ -390,7 +390,6 @@ class WaveManager {
         } else if (waveNumber === 20) {
             this.enemySpawnQueue.push({ type: 'sigma_boss', delay: spawnDelay });
         } else {
-            // scale difficulty gradually
             const baseCount = 8;
             const enemyCount = baseCount + waveNumber * 2;
             const delayIncrement = Math.max(400, 1000 - waveNumber * 20);

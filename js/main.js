@@ -2,13 +2,11 @@ let game;
 
 async function initGame() {
     if (typeof katex === 'undefined') {
-        console.error('KaTeX not loaded yet, retrying...');
         setTimeout(initGame, 100);
         return;
     }
     
     if (typeof loadQuestions === 'undefined') {
-        console.error('Questions module not loaded yet, retrying...');
         setTimeout(initGame, 100);
         return;
     }
@@ -16,7 +14,6 @@ async function initGame() {
     await loadQuestions();
     
     if (!questionsLoaded) {
-        console.error('Questions failed to load, retrying...');
         setTimeout(initGame, 100);
         return;
     }

@@ -21,6 +21,7 @@
                         <span class="hp-icon">♥</span>
                         <span id="hp-amount">20</span>
                     </div>
+                    <button id="help-btn" class="game-btn">Help: how do I play this?</button>
                 </div>
                 <div id="top-right-ui">
                     <div id="wave-info">
@@ -59,6 +60,20 @@
                         <button class="answer-btn" data-choice="2"></button>
                         <button class="answer-btn" data-choice="3"></button>
                     </div>
+                    <div id="explanation-view" class="hidden">
+                        <div id="explanation-header"></div>
+                        <div id="explanation-body">
+                            <div id="explanation-problem">
+                                <div class="explanation-label">Problem</div>
+                                <div id="explanation-problem-content"></div>
+                            </div>
+                            <div id="explanation-solution">
+                                <div class="explanation-label">Here's one way to solve it:</div>
+                                <div id="explanation-solution-content"></div>
+                            </div>
+                        </div>
+                        <button id="continue-btn" class="game-btn">Continue</button>
+                    </div>
                     <div id="question-feedback" class="hidden">
                         <div id="feedback-message"></div>
                         <div id="feedback-explanation"></div>
@@ -68,19 +83,6 @@
             
             <div id="dashboard-panel" class="panel-content">
                 <div id="topic-grid"></div>
-                
-                <div id="dashboard-info">
-                    <div id="time-freeze-section">
-                        <h3>Time Freezes: <span id="freeze-count">0</span>/3</h3>
-                        <button id="use-freeze-btn" class="game-btn" disabled>USE FREEZE (8s)</button>
-                        <button id="buy-freeze-btn" class="game-btn">BUY FREEZE (50 coins)</button>
-                    </div>
-                    
-                    <div id="wave-preview">
-                        <h3>Next Wave Enemies</h3>
-                        <div id="enemy-preview-list"></div>
-                    </div>
-                </div>
             </div>
             
             <div id="market-panel" class="panel-content">
@@ -109,6 +111,36 @@
             <div id="game-over-stats"></div>
             <button id="retry-level-btn" class="game-btn">Retry Level</button>
             <button id="back-to-menu-btn" class="game-btn">Back to Menu</button>
+        </div>
+    </div>
+
+    <div id="help-modal" class="modal hidden">
+        <div class="modal-content help-content">
+            <div class="help-header-bar">
+                <h2>How to Play</h2>
+                <button id="close-help-btn" class="close-help-x">× Close</button>
+            </div>
+            <div class="help-section">
+                <h3>Goal</h3>
+                <p>Defend your base from enemies by answering calculus questions correctly. Correct answers earn coins to buy towers. Wrong answers let enemies through!</p>
+            </div>
+            <div class="help-section">
+                <h3>Towers & Questions</h3>
+                <p><strong>Questions:</strong> Answer multiple choice questions to earn coins. Each topic unlocks new towers.</p>
+                <p><strong>Towers:</strong> Click empty spaces on the map to place towers. Each tower type corresponds to a calculus topic (Geometric, p-Series, etc.).</p>
+                <p><strong>Upgrades:</strong> Click existing towers to upgrade them using earned coins.</p>
+            </div>
+            <div class="help-section">
+                <h3>Enemies & Waves</h3>
+                <p><strong>Start Wave:</strong> Click "START WAVE" to begin enemy attacks.</p>
+                <p><strong>Time Freeze:</strong> Buy time freezes (50 coins) to pause enemies and give yourself time to answer questions.</p>
+                <p><strong>Speed:</strong> Toggle between 1x and 2x game speed.</p>
+            </div>
+            <div class="help-section">
+                <h3>Dashboard & Review</h3>
+                <p><strong>Dashboard:</strong> View your accuracy and coins per topic. Pin a topic to focus on it.</p>
+                <p><strong>Full Review:</strong> Click "FULL REVIEW" to cycle through all questions without enemies attacking.</p>
+            </div>
         </div>
     </div>
 
